@@ -1,7 +1,54 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>안녕하세요, 제 홈페이지입니다</h1>
-<p>GitHub Pages로 만들었습니다!</p>
-</body>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="김강현의 개인 홈페이지">
+    <title>김강현 | 개인 홈페이지</title>
+    <style>
+      :root { --ink:#172033; --muted:#667085; --line:#e6e9ef; --accent:#3b5ccc; --paper:#fff; --wash:#f5f7fc; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; color:var(--ink); background:var(--wash); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+      .wrap { width:min(100% - 32px,860px); margin:0 auto; }
+      header { padding:22px 0; background:rgba(255,255,255,.88); border-bottom:1px solid var(--line); }
+      nav { display:flex; justify-content:space-between; align-items:center; gap:20px; }
+      .brand { color:var(--ink); font-weight:750; text-decoration:none; }
+      .links { display:flex; gap:18px; }
+      .links a { color:var(--muted); font-size:.92rem; text-decoration:none; }
+      .links a:hover, .contact:hover { color:var(--accent); text-decoration:underline; }
+      main { padding:64px 0; }
+      .hero { padding:48px; background:var(--paper); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 32px rgba(25,39,72,.06); }
+      .eyebrow { margin:0 0 12px; color:var(--accent); font-size:.9rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+      h1 { margin:0; font-size:clamp(2.3rem,8vw,4.6rem); letter-spacing:-.055em; line-height:1.08; }
+      .lead { max-width:590px; margin:20px 0 0; color:var(--muted); font-size:clamp(1.05rem,2.5vw,1.22rem); }
+      section { margin-top:28px; padding:34px; background:var(--paper); border:1px solid var(--line); border-radius:16px; }
+      h2 { margin:0 0 16px; font-size:1.35rem; letter-spacing:-.025em; }
+      section p { margin:0; color:var(--muted); }
+      .interests { display:flex; flex-wrap:wrap; gap:10px; padding:0; margin:0; list-style:none; }
+      .interests li { padding:8px 13px; color:#24418f; background:#edf1ff; border-radius:999px; font-size:.94rem; }
+      .contact { color:var(--accent); font-weight:650; text-decoration:none; word-break:break-all; }
+      footer { padding:0 0 38px; color:var(--muted); font-size:.88rem; text-align:center; }
+      @media (max-width:560px) { header { padding:16px 0; } .links { gap:12px; } main { padding:28px 0; } .hero { padding:32px 24px; border-radius:16px; } section { padding:26px 24px; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="wrap" aria-label="주요 메뉴">
+        <a class="brand" href="#top">김강현</a>
+        <div class="links"><a href="#about">소개</a><a href="#interests">관심사</a><a href="#contact">연락처</a></div>
+      </nav>
+    </header>
+    <main id="top" class="wrap">
+      <article class="hero">
+        <p class="eyebrow">Personal homepage</p>
+        <h1>안녕하세요,<br>김강현입니다.</h1>
+        <p class="lead">서울대 첨단융합학부 소속입니다.<br>배우고, 생각하고, 직접 만들어 보는 것을 좋아합니다.</p>
+      </article>
+      <section id="about"><h2>소개</h2><p>서울대 첨단융합학부 소속입니다. 저는 새로운 것을 배우며 제 생각을 나누는 사람입니다. 작은 아이디어도 실제로 만들어 보면서 한 걸음씩 성장하고 있습니다.</p></section>
+      <section id="interests"><h2>관심사</h2><ul class="interests"><li>웹 만들기</li><li>디자인</li><li>글쓰기</li><li>새로운 기술</li></ul></section>
+      <section id="contact"><h2>연락처</h2><p><a class="contact" href="mailto:your-email@example.com">your-email@example.com</a></p></section>
+    </main>
+    <footer class="wrap">© 2026 김강현</footer>
+  </body>
 </html>
